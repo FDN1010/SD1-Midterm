@@ -1,0 +1,18 @@
+Fabian:
+The 8080A/9080A MOS MICROPROCESSOR HANDBOOK:
+https://www.bitsavers.org/components/amd/_dataBooks/1977_AMD_8080A_9080A_MOS_Microprocessor_Handbook.pdf
+-block diagram on page 94
+
+MCS-80/85 FAMILY USER'S MANUAL:
+https://www.bitsavers.org/components/intel/MCS80/MCS80_85_Users_Manual_Jan83.pdf
+
+8080A Processor Technical Documentation:
+http://sebhc.github.io/sebhc/project8080/pgs/8080a.html
+
+Jereme:
+
+Abram:
+
+Daniel:
+
+

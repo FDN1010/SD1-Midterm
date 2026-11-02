@@ -1,0 +1,110 @@
+Chapter 2 Project Description(10 Pages):
+	1. D&C already has ~8 Pages for chapter 2
+	2. Add descriptions for Software and Hardware Diagram (~2 pages)
+	
+
+Chapter 3 Research and Investigation (45 - 60 Pages):
+	Chapter Flow: Hardware -> Communication -> Software
+	
+	1. Chapter Flow: 
+		a. Hardware:
+			i. Comparing FPGA Dev board vs custom Motherboard
+			ii. Compare FPGA dev boards (ex: Basys 3 vs Nexys A7)
+			iii. DDR2 vs. HyperRAM
+			iv. 64 kb RAM bank switching (How will is it implemented)
+		
+		b. Communication:
+			i. VGA vs HDMI Connection
+			ii. PS/2 vs USB 
+			
+		c. Software: 
+			i. 8-bit raycasting (8-bit math) vs modern raycasting, Why no 3D Game Engine like Unreal 
+			ii. No OS (Compare buidling an custom kernel vs bare metal programming 
+			iii. 64 kb RAM bank switching (Why 64kb is NOT enough and history of bank switching to build games)
+			iv. emulator vs FPGA implementation (for emulator, we will use SDL2 library, not on FPGA)
+			v. Different Programming Lanuages
+		
+	2. Technology Comparison & Selection:
+		a. HDL Justification (application used + lanuage, why not VHDL or SystemVerilog)
+		b. software justification
+		c. simulators comparion 
+	
+	3. Part Comparison & Selection:
+		a. FPGA dev boards comparison
+		b. compilers & emulators comparison
+	
+	
+	Other:
+		1. Different Version Control
+		2. Different project tracking techniques
+		
+	
+Chapter 4 Design Standards and Constraints (10 - 15 Pages):
+	1. Design Constraints:
+		a. Software: 8-bit raycasting (8-bit math), No OS, 64 kb RAM (bank switching), emulator vs FPGA speed. 
+		b. Hardware: FPGA on-board chips vs external (Do we need HyperRAM?),
+						Multi-cycle constraints (compared to piplined), FPGA I/O Keyboard/Mouse and VGA, 
+							memory controller (on-board DDR2 vs HyperRAM).
+				
+	2. Standard Constraints:
+		a. Software: Compilers & Emulators (Pure 8080 asm + No CP/M)
+		b. Hardware: IEEE Verilog standards, the FPGA we're using isn't open sourced and requires vivado to program.
+					(ADD MORE)
+					
+					
+					
+Chapter 6 Hardware Design (15 - 20 Pages):
+	1. Breakdown every block diagram into RTL modules and explain its architecture, math, logic, 
+	and need behind it.
+		a. Bank switching logic 
+		b. Keyboard & Mouse I/O
+		c. Memory (either DDR2 OR HyperRAM after deciding)
+		d. VGA Display (how will that work from software -> hardware)
+		e. TURBO MODE (how will it work?)
+	
+	
+
+Chapter 7 Software Design (10 - 20 Pages):
+	1. Breakdown game details
+		a. Start Menu
+		b. 1-3 Levels
+		c. 1-3 Enemies per level
+		d. 1 weapon for FPS/Enemies
+		e. Compiler Choice
+		f. Emulator Choice
+	
+	
+
+Chapter 8 Risk Assessment (5 - 10 Pages):
+	1. Which componenet has the highest risk of failure?
+		a. Software since there aren't 8-bit DOOM versions that previously existed
+			i. bare metal programming
+			ii. 8 bit raycasting
+		b. Hardware: bank switching, VGA display
+	
+	2. 	Potential Problems
+		a. Game is too slow: more software optimization for math operations
+		b. Turbo mode did not increase FPS: it might not increase the FPS.
+		c. Impact: project needs to have a fuctional CPU + playable game
+		
+	3. Risk Assessment (Most to Least):
+		a. FPS
+		b. bank switching
+		c. memory controller
+		d. CPU design defects
+		e. VGA
+		
+
+		
+Chapter 11 Admistrative (5 - 10 Pages):
+	1. BOM, Milestone, Budgeting ...
+	2. Work Distribution
+	
+	
+	
+	
+	
+	
+	
+		
+		
